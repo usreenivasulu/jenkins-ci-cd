@@ -12,7 +12,7 @@ public class JenkinsCiCdApplication {
 	
 	@GetMapping("/greetings/{name}")
 	public String greetings(@PathVariable String name) {
-		return "Hello "+name + "Congratuallations you have successfully completed jenkins CI CD Demo";
+		return "Hello "+name + "Congratuallations you have successfully completed jenkins CI CD Demo pipeline";
 	}
 
 	public static void main(String[] args) {
