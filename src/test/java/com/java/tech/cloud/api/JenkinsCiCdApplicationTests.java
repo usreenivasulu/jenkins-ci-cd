@@ -18,7 +18,7 @@ class JenkinsCiCdApplicationTests {
 		String name ="Sreenivasulu urimindi";
 		mockMvc.perform(MockMvcRequestBuilders.get("/greetings/{name}",name))
 		.andExpect(MockMvcResultMatchers.status().isOk())
-		.andExpect(MockMvcResultMatchers.content().string("Hello "+name + "Congratuallations you have successfully completed jenkins CI CD Demo pipeline"));
+		.andExpect(MockMvcResultMatchers.content().string("Hello "+name.split(" ")[0] + "Congratuallations you have successfully completed jenkins CI CD Demo pipeline"));
 		
 	}
 
