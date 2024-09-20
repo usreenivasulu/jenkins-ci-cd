@@ -9,11 +9,11 @@ import org.springframework.web.bind.annotation.RestController;
 @SpringBootApplication
 @RestController
 public class JenkinsCiCdApplication {
-	
-	@GetMapping("/greetings/{name}")
-	public String greetings(@PathVariable String name) {
-		name = name.split(" ")[0];
-		return "Hello "+name + "Congratuallations you have successfully completed jenkins CI CD Demo pipeline";
+
+	@GetMapping("/")
+	public String greeting() {
+		
+		return "<h1 style='color:green'>Hello!!!Congratuallations you have successfully completed jenkins CI CD Demo pipeline<h1>";
 	}
 
 	public static void main(String[] args) {
