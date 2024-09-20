@@ -12,8 +12,8 @@ public class JenkinsCiCdApplication {
 
 	@GetMapping("/")
 	public String greeting() {
-		
-		return "<h1 style='color:green'>Hello!!!Congratuallations you have successfully completed jenkins CI CD Demo pipeline<h1>";
+		String greet = "Hello!!!Congratuallations you have successfully completed jenkins CI CD Demo pipeline";
+		return greet;
 	}
 
 	public static void main(String[] args) {
