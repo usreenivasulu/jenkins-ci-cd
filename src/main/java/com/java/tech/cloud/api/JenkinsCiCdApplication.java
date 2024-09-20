@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class JenkinsCiCdApplication {
 
-	@GetMapping("/")
+	@GetMapping("/greet")
 	public String greeting() {
 		String greet = "Hello!!!Congratuallations you have successfully completed jenkins CI CD Demo pipeline";
 		return greet;

@@ -15,7 +15,7 @@ class JenkinsCiCdApplicationTests {
 
 	@Test
 	public void greeting() throws Exception {
-		mockMvc.perform(MockMvcRequestBuilders.get("/"))
+		mockMvc.perform(MockMvcRequestBuilders.get("/greet"))
 		.andExpect(MockMvcResultMatchers.status().isOk())
 		.andExpect(MockMvcResultMatchers.content().string("Hello!!!Congratuallations you have successfully completed jenkins CI CD Demo pipeline"));
 		
